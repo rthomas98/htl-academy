@@ -11,20 +11,20 @@
 
 ?>
 
-<?php do_action( THEME_HOOK_PREFIX . 'end_content' ); ?>
-
 
 </div><!-- #content -->
 
-<?php do_action( THEME_HOOK_PREFIX . 'after_content' ); ?>
-
-<?php do_action( THEME_HOOK_PREFIX . 'before_footer' ); ?>
-<?php do_action( THEME_HOOK_PREFIX . 'footer' ); ?>
-<?php do_action( THEME_HOOK_PREFIX . 'after_footer' ); ?>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">dsdfsd</div>
+            <div class="col-6">sdfsdf</div>
+        </div>
+    </div>
+</footer>
 
 </div><!-- #page -->
 
-<?php do_action( THEME_HOOK_PREFIX . 'after_page' ); ?>
 
 <?php wp_footer(); ?>
 

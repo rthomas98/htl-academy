@@ -8,3 +8,45 @@ Make sure to respect the media queries! Otherwise you may
 accidentally add desktop styles to the mobile layout.
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 --------------------------------------------------------------*/
+
+/* Helper styles */
+.bg-black {
+    background-color: #141414;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.bg-black h2 {
+    color: #FDDCD7;
+}
+
+.bg-black p {
+    color: #fff;
+}
+
+/* Home Banner */
+
+.home-banner {
+    height: auto;
+}
+
+.home-banner h1 {
+    color: #141414;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 58px;
+}
+.home-banner p {
+    color: #141414;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.home-banner .lead {
+    color: #141414;
+}
