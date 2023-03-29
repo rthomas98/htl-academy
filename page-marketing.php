@@ -19,6 +19,14 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/home-banner.php' );
         endif;
 
+        if ( get_row_layout() == 'practice_areas' ):
+            include( get_stylesheet_directory() . '/acf-blocks/practice-areas.php' );
+        endif;
+
+        if ( get_row_layout() == 'about_me' ):
+            include( get_stylesheet_directory() . '/acf-blocks/about-me.php' );
+        endif;
+
     endwhile;
 endif; ?>
 

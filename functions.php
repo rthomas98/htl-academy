@@ -48,9 +48,11 @@ function buddyboss_theme_child_scripts_styles()
 
   // Styles
   wp_enqueue_style( 'buddyboss-child-css', get_stylesheet_directory_uri().'/assets/css/custom.css' );
-    wp_enqueue_style( 'bootstrap-css', get_stylesheet_directory_uri().'/assets/css/bootstrap-grid.css.' );
+  wp_enqueue_style( 'bootstrap-css', get_stylesheet_directory_uri().'/assets/css/bootstrap-grid.css.' );
+    wp_enqueue_style( 'bootstrap-utilities', get_stylesheet_directory_uri().'/assets/css/bootstrap-utilities.css.' );
 
-  // Javascript
+
+    // Javascript
   wp_enqueue_script( 'buddyboss-child-js', get_stylesheet_directory_uri().'/assets/js/custom.js' );
 }
 add_action( 'wp_enqueue_scripts', 'buddyboss_theme_child_scripts_styles', 9999 );
@@ -59,6 +61,26 @@ add_action( 'wp_enqueue_scripts', 'buddyboss_theme_child_scripts_styles', 9999 )
 /****************************** CUSTOM FUNCTIONS ******************************/
 
 // Add your own custom functions here
+
+// ACF Options Page
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title'    => 'Theme General Settings',
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Theme Footer Settings',
+        'menu_title'    => 'Footer',
+        'parent_slug'   => 'theme-general-settings',
+    ));
+
+}
 
 
 

@@ -17,14 +17,13 @@
                 <?php the_sub_field( 'content' ); ?>
             </div>
         </div>
-        <div class="row d-flex align-items-end order-last order-sm-last order-md-last order-lg-last">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-5 bg-black">
-                <p>
-                    Legal Advice with a Unique Approach and a Fresh Perspective.
-                </p>
-                <h2>Committed to your Satisfaction</h2>
+        <div class="row d-flex align-items-center order-last order-sm-last order-md-last order-lg-last">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-5 bg-black">
+                <?php the_sub_field( 'box_content' ); ?>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6"></div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-5 bg-black">
+                <?php the_sub_field( 'box_two_content' ); ?>
+            </div>
         </div>
     </div>
 </section>

@@ -18,15 +18,39 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+a {
+    text-decoration: none !important;
+    color: #141414;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    margin: 0 0 10px;
 }
 
 .bg-black h2 {
     color: #FDDCD7;
+    font-size: 38px;
 }
 
 .bg-black p {
     color: #fff;
 }
+
+.bg-black p.lead {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
 
 /* Home Banner */
 
@@ -49,4 +73,46 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
 .home-banner .lead {
     color: #141414;
+    margin-bottom: 20px;
+}
+
+/* Practice Area */
+
+.practice-area {
+    background-color: white;
+}
+
+.tile {
+    background-color: #FDDCD7;
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tile i {
+    color: #141414;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.tile h3 {
+    color: #141414;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.tile:hover {
+    background-color: #141414;
+}
+
+.tile:hover i {
+    color: #FDDCD7;
+}
+
+.tile:hover h3 {
+    color: white;
 }
