@@ -27,6 +27,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/about-me.php' );
         endif;
 
+        if ( get_row_layout() == 'recent_post' ):
+            include( get_stylesheet_directory() . '/acf-blocks/recent-post.php' );
+        endif;
+
     endwhile;
 endif; ?>
 

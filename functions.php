@@ -49,7 +49,7 @@ function buddyboss_theme_child_scripts_styles()
   // Styles
   wp_enqueue_style( 'buddyboss-child-css', get_stylesheet_directory_uri().'/assets/css/custom.css' );
   wp_enqueue_style( 'bootstrap-css', get_stylesheet_directory_uri().'/assets/css/bootstrap-grid.css.' );
-    wp_enqueue_style( 'bootstrap-utilities', get_stylesheet_directory_uri().'/assets/css/bootstrap-utilities.css.' );
+  wp_enqueue_style( 'bootstrap-utilities', get_stylesheet_directory_uri().'/assets/css/bootstrap-utilities.css.' );
 
 
     // Javascript
@@ -60,7 +60,14 @@ add_action( 'wp_enqueue_scripts', 'buddyboss_theme_child_scripts_styles', 9999 )
 
 /****************************** CUSTOM FUNCTIONS ******************************/
 
-// Add your own custom functions here
+// Custom Image Sizes
+
+function my_theme_setup() {
+    add_theme_support('post-thumbnails');
+    add_image_size('custom-size', 300, 224, true);
+}
+add_action('after_setup_theme', 'my_theme_setup');
+
 
 // ACF Options Page
 
